@@ -21,17 +21,17 @@ import br.ufpe.cin.model.Room;
 
 public class GameBoard extends JPanel implements ActionListener {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
 	private class TAdapter extends KeyAdapter {
 		@Override
 		public void keyReleased(KeyEvent e) {
 			organizer.keyReleased(e);
 		}
 	}
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private static final int PLAYERLEFT = 1;
 	private static final int PLAYERLOCAL = 0;
 	private static final int PLAYERRIGHT = 3;
